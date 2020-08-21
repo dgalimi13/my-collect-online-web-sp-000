@@ -1,4 +1,6 @@
 def my_collect(collection)
-  collection.each do |name| {name.upcase}
+  new_collection = []
+  collection.each do |name| {name.upcase} << new_collection
 end
+return new_collection
 end
